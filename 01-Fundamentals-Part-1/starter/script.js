@@ -80,7 +80,7 @@ String(23);
 console.log('I am ' + 23 + ' years old!')
 // -,*,/ converts strings into numbers
 console.log('23' - '10' - 5);
-*/
+
 // 5 falsy values: 0, '', undefined, null, NaN
 const age = 18;
 if (age === 18) { console.log('YES!') };
@@ -89,3 +89,35 @@ if (age === 18) { console.log('YES!') };
 
 const favorite = prompt("what's your fav number!");
 console.log(favorite);
+
+const hasDriverLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriverLicense && hasGoodVision); // AND
+console.log(hasDriverLicense || hasGoodVision); // OR
+console.log(!hasDriverLicense); // NOt
+
+const day = 'monday';
+
+switch (day) {
+    case 'monday':
+        console.log('go to meeting');
+        console.log('write code');
+        break;
+    case 'tuesday':
+        console.log('prepare food');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('record videos');
+        break;
+    default:
+        console.log('not a valid day')
+}
+
+const age = 23;
+age >= 18 ? console.log('I like to drink wine!') : console.log('I like to drink water!');
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink); 
+*/
